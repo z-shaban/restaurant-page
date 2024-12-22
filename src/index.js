@@ -1,11 +1,15 @@
-import {home} from "./homepage.js";
-import {menu} from "./menu.js";
-import {contact} from "./contact.js";
+import { home } from "./homepage.js";
+import { menu } from "./menu.js";
+import { contact } from "./contact.js";
+
+document.addEventListener("DOMContentLoaded", () => {
 
 const homeTab = document.querySelector("#home");
 const menuTab = document.querySelector("#menu");
 const contactTab = document.querySelector("#contact");
 const content = document.querySelector("#content");
+
+content.appendChild(home());
 
 homeTab.addEventListener("click", ()=>{
     content.textContent = "";
@@ -22,4 +26,4 @@ contactTab.addEventListener("click", ()=>{
     content.appendChild(contact());
 });
 
-
+})

@@ -8,6 +8,7 @@ export function home(){
     welcomeMessage.textContent = "Welcome to CASA.Home of delicious meals";
     
     homePage.append(restaurantName, welcomeMessage);
+    return homePage;
 }
 
 
